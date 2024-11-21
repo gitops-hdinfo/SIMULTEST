@@ -1,0 +1,127 @@
+/* Centrer le contenu de la page */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f5f7; /* Couleur de fond claire */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Conteneur principal */
+.simulateur-container {
+    background-color: #ffffff; /* Fond blanc épuré */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Titre */
+.simulateur-container h2 {
+    font-size: 24px;
+    color: #1c1c1e; /* Texte sombre pour le contraste */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Labels */
+.simulateur-container label {
+    font-size: 14px;
+    color: #3a3a3c; /* Couleur de texte légèrement grise */
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+}
+
+/* Champs de formulaire */
+.simulateur-container input,
+.simulateur-container select,
+.simulateur-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d1d6;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1c1c1e;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus sur les champs */
+.simulateur-container input:focus,
+.simulateur-container select:focus,
+.simulateur-container textarea:focus {
+    border-color: #007aff; /* Couleur bleue typique d'Apple */
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.3);
+    outline: none;
+}
+
+/* Bouton */
+.simulateur-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007aff; /* Bleu Apple */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover et active sur le bouton */
+.simulateur-container button:hover {
+    background-color: #005bb5;
+}
+
+.simulateur-container button:active {
+    transform: scale(0.98);
+}
+
+/* Résultats */
+#resultat-simulation {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #d1d1d6;
+}
+
+#resultat-simulation h3 {
+    font-size: 18px;
+    color: #1c1c1e;
+    margin-bottom: 10px;
+}
+
+#resultat-simulation p {
+    font-size: 14px;
+    color: #3a3a3c;
+    margin: 5px 0;
+}
+
+/* Tableaux */
+#resultat-simulation table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#resultat-simulation table th,
+#resultat-simulation table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #d1d1d6;
+    font-size: 14px;
+    color: #3a3a3c;
+}
+
+#resultat-simulation table th {
+    font-weight: 600;
+}
